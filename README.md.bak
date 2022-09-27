@@ -7,7 +7,7 @@
 - To run the project run the following command in the project directory:
 `yarn start`
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- To better understand the workflow process, view [this video](https://www.youtube.com/watch?v=1jAtPrOrRPs) on how to fork a repository, and open a pull request to merge branches within a forked repository
+
 
 ## Task
 Create a blog website that dynamically renders a list of sample blogs from different authors. The site should include, but is not limited to:
