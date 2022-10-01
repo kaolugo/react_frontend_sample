@@ -44,9 +44,10 @@ function BlogHome() {
                 <h3>meet some of our authors below 👇</h3>
             </div>
             <div class = 'authorCards'>
-                {data && <AuthorCard info={data[0]} />}
-                {data && <AuthorCard info={data[1]} />}
-                {data && <AuthorCard info={data[2]} />}
+                {data && data.map((item) => (
+                    <AuthorCard info={item} />
+                ))}
+
             </div>
         </div>
     );

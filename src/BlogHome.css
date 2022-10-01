@@ -7,7 +7,7 @@ html {
 
 .blogHome {
     margin-left: 200px;
-    margin-right: 200px;
+    margin-right: 300px;
 }
 
 .titleArea {
@@ -64,6 +64,7 @@ h3 {
 .authorCards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* card styling */
@@ -73,6 +74,7 @@ h3 {
     border-color: #026BDF;
     width: 30%;
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 .fullname {
@@ -111,6 +113,22 @@ h3 {
     margin-bottom: 20px;
 }
 
+a:link {
+    text-decoration: none;
+}
+  
+  /* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+a:visited .fullname {
+    color: #026BDF;
+}
+
+.card:hover {
+    transform: translate3D(0,-1px,0) scale(1.03);
+}
 
 
 
