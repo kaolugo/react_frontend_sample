@@ -90,4 +90,28 @@ h3 {
     color: #026BDF;
     font-weight: 900;
     font-size: 16px;
+
+    margin-bottom: 30px;
 }
+
+.postTitle {
+    list-style: url('bullet.svg'); 
+    font-family: IBM Plex Mono;
+    font-size: 18px;
+    font-weight: 700;
+    color: #026BDF;
+    margin-bottom: 10px;
+
+}
+
+.postBody {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-family: IBM Plex Mono;
+    margin-bottom: 20px;
+}
+
+
+
+
+
