@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import ProvidedHomePage from './ProvidedHomePage';
 import BlogHome from './BlogHome';
+import AuthorPage from './AuthorPage';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Fragment>
         <Routes>
           <Route exact path='/' element={<BlogHome />}/>
+          <Route exact path='/sample' element={<ProvidedHomePage />}/>
+          <Route exact path='/author' element={<AuthorPage />}/>
         </Routes>
       </Fragment>
     </Router>
