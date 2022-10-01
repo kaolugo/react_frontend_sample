@@ -33,7 +33,7 @@ function AuthorCard(props) {
 
     return (
         <div class='card'>
-            <Link to='/author'>
+            <Link to='/author' state={{ from: info.id }}>
                 <div class='fullname'>{info.name}</div>
                 <div class='username'>@{info.username}</div>
                 {data && <li class='postTitle'>  {data[0].title}</li>}

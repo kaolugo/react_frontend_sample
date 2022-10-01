@@ -1,0 +1,79 @@
+.authorPage {
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.authorDash {
+    display: flex;
+    justify-content: space-between;
+}
+
+.authorProfile {
+    border: solid;
+    border-color: #026BDF;
+    border-radius: 5px;
+    padding: 20px;
+
+    width: 30%;
+    height: max-content;
+}
+
+.authorPosts {
+    width: 60%;
+}
+
+h5 {
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-weight: 600;
+
+    align-self: flex-end;
+}
+
+h5 a:visited {
+    color: black;
+}
+
+.profileusername {
+    font-family: Poppins;
+    color: #026BDF;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.userSite {
+    font-family: Poppins;
+    color: #026BDF;
+    font-weight: 900;
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+.userSite a {
+    color: #026BDF;
+}
+
+.userSite a:visited {
+    color: #026BDF;
+}
+
+.blurb {
+    font-family: IBM Plex Mono;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feedheader {
+    color: #026BDF;
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.singlePost {
+    margin-bottom: 50px;
+}
+
