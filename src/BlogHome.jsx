@@ -25,6 +25,11 @@ function BlogHome() {
         };
 
         getData();
+        // axios.get(USERS)
+        //     .then((response) => {
+        //         //console.log(response);
+        //         setData(response.data)
+        //     })
     }, []);
 
     console.log(data)
@@ -39,7 +44,9 @@ function BlogHome() {
                 <h3>meet some of our authors below 👇</h3>
             </div>
             <div class = 'authorCards'>
-                <AuthorCard info={data[0]} />
+                {data && <AuthorCard info={data[0]} />}
+                {data && <AuthorCard info={data[1]} />}
+                {data && <AuthorCard info={data[2]} />}
             </div>
         </div>
     );

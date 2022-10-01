@@ -61,5 +61,33 @@ h3 {
     align-self: flex-end;
 }
 
+.authorCards {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* card styling */
+.card {
+    border: solid;
+    border-radius: 5px;
+    border-color: #026BDF;
+    width: 30%;
+    padding: 15px;
+}
+
+.fullname {
+    font-family: Poppins;
+    background-color: rgba(244, 232, 6, 0.5);
+    width: max-content;
+    font-weight: 900;
+    font-size: 24px;
+    
+    margin-bottom: 5px;
+}
+
+.username {
+    font-family: Poppins;
+    color: #026BDF;
+    font-weight: 900;
+    font-size: 16px;
+}
