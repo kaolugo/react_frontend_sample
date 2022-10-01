@@ -1,0 +1,62 @@
+/* @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&family=Poppins:wght@700;900&display=swap);
+
+html {
+    background-color: #FFFCF5;
+}
+
+.blogHome {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.titleArea {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Poppins;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: 0.1em;
+
+    color: rgba(244, 232, 6, 1);
+
+    margin-bottom: -200px;
+}
+
+h4 {
+    font-family: Poppins;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: 0.1em;
+
+    position: relative;
+    top: -65px;
+    left: 10px;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #026BDF;
+
+    color: rgba(244, 232, 6, 0);
+
+    margin-bottom: -80px;
+}
+
+h2 {
+    font-family: IBM Plex Mono;
+    font-size: 36px;
+    font-weight: 600;
+    color: #026BDF;
+
+    margin-bottom: -30px;
+}
+
+h3 {
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-weight: 600;
+
+    align-self: flex-end;
+}

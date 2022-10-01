@@ -1,6 +1,6 @@
 import logo from './levvel-logo.svg';
 import './App.css';
-import Sample from './Sample'
+import Sample from './Sample.jsx'
 
 function ProvidedHomePage() {
     return (
