@@ -1,0 +1,169 @@
+.authorProfile {
+    border: solid;
+    border-color: #026BDF;
+    border-radius: 5px;
+    padding: 20px;
+    height: max-content;
+}
+
+h5 {
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-weight: 600;
+
+    align-self: flex-end;
+}
+
+h5 a:visited {
+    color: black;
+}
+
+.profileusername {
+    font-family: Poppins;
+    color: #026BDF;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.userSite {
+    font-family: Poppins;
+    color: #026BDF;
+    font-weight: 900;
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+.userSite a {
+    color: #026BDF;
+}
+
+.userSite a:visited {
+    color: #026BDF;
+}
+
+.blurb {
+    font-family: IBM Plex Mono;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feedheader {
+    color: #026BDF;
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.singlePost {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .authorPage {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .authorDash {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .authorProfile {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    h5 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .authorPage {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .authorDash {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .authorProfile {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .authorPosts {
+        width: 100%;
+    }
+
+    h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .authorPage {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .authorDash {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .authorProfile {
+        width: 30%;
+        margin-bottom: 0px;
+    }
+
+    .authorPosts {
+        width: 60%;
+    }
+
+    h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .authorPage {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .authorPage {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+}
+
+
+

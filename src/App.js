@@ -1,25 +1,25 @@
-import logo from './levvel-logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import ProvidedHomePage from './ProvidedHomePage';
+import BlogHome from './BlogHome';
+import AuthorPage from './AuthorPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Fragment>
+        <Routes>
+          <Route exact path='/' element={<BlogHome />}/>
+          <Route exact path='/sample' element={<ProvidedHomePage />}/>
+          <Route exact path='/author' element={<AuthorPage />}/>
+        </Routes>
+      </Fragment>
+    </Router>
   );
-}
+};
 
 export default App;
