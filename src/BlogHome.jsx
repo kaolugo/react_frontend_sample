@@ -25,30 +25,32 @@ function BlogHome() {
         };
 
         getData();
-        // axios.get(USERS)
-        //     .then((response) => {
-        //         //console.log(response);
-        //         setData(response.data)
-        //     })
     }, []);
 
-    console.log(data)
+    if (error) {
+        console.log(error);
+    }
 
 
     return (
-        <div className = "BlogHome" class = "blogHome">
-            <div class = 'titleArea'>
-                <h1>THE ANYTHING BLOG</h1>
-                <h4>THE ANYTHING BLOG</h4>
-                <h2>the blog where anything and <br></br>everything goes.</h2>
-                <h3>meet some of our authors below 👇</h3>
-            </div>
-            <div class = 'authorCards'>
-                {data && data.map((item) => (
-                    <AuthorCard info={item} />
-                ))}
-
-            </div>
+        <div>
+            {!loading && (
+                <div className = "BlogHome" class = "blogHome">
+                    <div class = 'titleArea'>
+                        <h1>THE ANYTHING BLOG</h1>
+                        <h4>THE ANYTHING BLOG</h4>
+                        <h2>the blog where anything and <br></br>everything goes.</h2>
+                        <h3>meet some of our authors below 👇</h3>
+                    </div>
+                    <div class = 'authorCards'>
+                        {data && data.map((item) => (
+                            <AuthorCard info={item} />
+                        ))}
+        
+                    </div>
+                </div>
+            )}
+            {loading && <div>Loading ...</div>}
         </div>
     );
 }

@@ -58,32 +58,40 @@ function AuthorPage() {
 
     }, [from]);
 
-    console.log(user);
-    console.log(posts);
+    if (error) {
+        console.log(error);
+    }
 
     return (
-        <div className = "AuthorPage" class='authorPage'>
-            <div class = 'titleArea'>
-                <h1>THE AUTHOR</h1>
-                <h4>THE AUTHOR</h4>
-                <h5><Link to='/'>go back to main page 👈</Link></h5>
-            </div>
-            <div class='authorDash'>
-                <div class='authorProfile'>
-                    {user && <div class='fullname'>{user.name}</div>}
-                    {user && <div class='profileusername'>@{user.username}</div>}
-                    {user && <div class='userSite'>🔗 <a href={'https://' + user.website}>{user.website}</a></div>}
-                    {user && <div class='blurb'>"{user.company.catchPhrase}"</div>}
+        <div>
+            {loading && <div>Loading ...</div>}
+            {!loading && (
+                <div className = "AuthorPage" class='authorPage'>
+                    <div class = 'titleArea'>
+                        <h1>THE AUTHOR</h1>
+                        <h4>THE AUTHOR</h4>
+                        <h5><Link to='/'>go back to main page 👈</Link></h5>
+                    </div>
+                    <div class='authorDash'>
+                        <div class='authorProfile'>
+                            {user && <div class='fullname'>{user.name}</div>}
+                            {user && <div class='profileusername'>@{user.username}</div>}
+                            {user && <div class='userSite'>🔗 <a href={'https://' + user.website}>{user.website}</a></div>}
+                            {user && <div class='blurb'>"{user.company.catchPhrase}"</div>}
+                        </div>
+                        <div class='authorPosts'>
+                            {user && <div class='feedheader'>{user.name}'s blog posts ...</div>}
+        
+                            {posts && posts.map((item) => (
+                                <Post info={item} />
+                            ))}
+                        </div>
+                    </div>
                 </div>
-                <div class='authorPosts'>
-                    {user && <div class='feedheader'>{user.name}'s blog posts ...</div>}
+            )}
 
-                    {posts && posts.map((item) => (
-                        <Post info={item} />
-                    ))}
-                </div>
-            </div>
         </div>
+        
     );
 }
 

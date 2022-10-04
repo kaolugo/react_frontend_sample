@@ -29,18 +29,23 @@ function AuthorCard(props) {
         getData();
     }, [info]);
 
-    console.log(data);
+    if (error) {
+        console.log(error);
+    }
 
     return (
         <div class='card'>
-            <Link to='/author' state={{ from: info.id }}>
-                <div class='fullname'>{info.name}</div>
-                <div class='username'>@{info.username}</div>
-                {data && <li class='postTitle'>  {data[0].title}</li>}
-                {data && <div class='postBody'>  {data[0].body}</div> }
-                {data && <li class='postTitle'>  {data[1].title}</li>}
-                {data && <div class='postBody'>  {data[1].body}</div> }
-            </Link>
+            {loading && <div>Loading ...</div>}
+            {!loading && (
+                <Link to='/author' state={{ from: info.id }}>
+                    <div class='fullname'>{info.name}</div>
+                    <div class='username'>@{info.username}</div>
+                    {data && <li class='postTitle'>  {data[0].title}</li>}
+                    {data && <div class='postBody'>  {data[0].body}</div> }
+                    {data && <li class='postTitle'>  {data[1].title}</li>}
+                    {data && <div class='postBody'>  {data[1].body}</div> }
+                </Link>
+            )}
         </div>
     );
 }
